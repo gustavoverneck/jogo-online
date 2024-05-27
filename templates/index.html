@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monopoly Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Monopoly Game</h1>
+    <div id="game">
+        <div id="board">
+            <!-- Tabuleiro do jogo (simplificado) -->
+        </div>
+        <div id="controls">
+            <input type="text" id="username" placeholder="Seu nome">
+            <input type="text" id="room" placeholder="Sala">
+            <button id="join">Entrar</button>
+            <button id="roll">Rolar Dados</button>
+        </div>
+        <div id="players">
+            <!-- Lista de jogadores -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
